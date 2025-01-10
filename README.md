@@ -31,3 +31,17 @@ An interactive Battleship game where the player competes against the computer. W
 
 ## File Structure
 
+src/ 
+├── index.html # Main HTML file 
+├── index.js # Entry point of the game logic 
+├── styles.css # Game styling 
+└── 
+modules/ # Game modules 
+├── ship.js # Ship class and logic 
+├── gameboard.js # Gameboard class and logic 
+├── player.js # Player class and turn management 
+├── captain.js # Base Captain class + individual captains
+├── captainAstrid.js # Captain Astrid's special ability 
+├── captainGiuseppe.js # Captain Giuseppe's special ability 
+├── captainWilliam.js # Captain William's special ability 
+└── captainKatrin.js # Captain Katrin's special ability
