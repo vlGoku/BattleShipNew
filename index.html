@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Battleship Game</title>
+</head>
+<body>
+    <header>
+        <h1>Battleship Game</h1>
+        <p>Place your ships and prepare for battle!</p>
+      </header>
+
+      <main>
+        <section id="captain-selection">
+          <label for="captain-dropdown">Choose Your Captain:</label>
+          <select id="captain-dropdown">
+            <option value="" disabled selected>Select a Captain</option>
+            <option value="William" data-ability="Destroy Line">Captain William - Destroy Line</option>
+            <option value="Giuseppe" data-ability="Destroy 9 random fields">Captain Giuseppe - Destroy 9 random fields</option>
+            <option value="Astrid" data-ability="Destroy 3x3">Captain Astrid - Destroy 3x3</option>
+            <option value="Katrin" data-ability="Destroy 6 random close to shot">Captain Katrin - Destroy 6 close to shot</option>
+          </select>
+          <button id="startGameBtn" disabled>Start Game</button>
+        </section>
+
+        <div id="turnDisplay"></div>
+        
+        <section class="game-container">
+          <div class="gameboard player-board">
+            <h2>Player's Board</h2>
+            <div class="grid" id="playerBoard"></div>
+          </div>
+          
+          <div class="gameboard cpu-board">
+            <h2>Computer's Board</h2>
+            <div class="grid" id="cpuBoard"></div>
+          </div>
+        </section>
+        
+        <section class="info">
+          <div class="player-info">
+            <h2>Player: Marko</h2>
+            <p>Selected Captain: <span id="selected-captain"></span></p>
+            <button id="useAbilityBtn" disabled>Use Captain's Ability</button>
+          </div>
+        </section>
+      </main>
+    
+      <footer>
+        <p>&copy; 2025 Battleship Game</p>
+      </footer>
+
+      <script type="module" src="index.js"></script>
+</body>
+</html>
